@@ -8,7 +8,8 @@ export function chartDolar () {
         let valores = datos.map(element => element.valor);
         let fechas = datos.map(element =>{
           let resultadoFecha = element.fecha.split('T');
-           return resultadoFecha[0];
+          resultadoFecha = resultadoFecha[0].split('-').reverse().join('-');
+           return resultadoFecha;
         });
         console.log(valores)
         console.log(fechas)
@@ -26,10 +27,10 @@ function charts (fechas, valores){
   const myChart = new Chart(ctx, {
       type: 'line',
       data: {
-          labels: fechas,
+          labels: fechas.reverse(),
           datasets: [{
               label: 'Dolar',
-              data: valores,
+              data: valores.reverse(),
               borderColor:'red',
               borderWidth: 1
           }]
