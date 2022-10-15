@@ -6,3 +6,6 @@ chartUf();
 
 import {chartEuro} from './euro.js';
 chartEuro();
+
+import {chartIpc} from './euro.js';
+chartIpc();
