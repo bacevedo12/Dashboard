@@ -7,6 +7,8 @@ chartUf();
 import {chartEuro} from './euro.js';
 chartEuro();
 
+import {chartLibraCobre} from './libraCobre.js';
+chartLibraCobre();
 // (()=>{
 //     const tabla = document.getElementById('valorDolar');
 //     const peticion = async (url) => {

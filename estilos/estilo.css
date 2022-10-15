@@ -1,0 +1,45 @@
+h1{
+    font-size: 12rem;
+    color: white;
+    font-style: georgia; 
+}
+h2{
+    font-size: 8rem;
+    color: white;
+    font-style: georgia; 
+}
+
+.header {
+    background-color: #04253A;
+ 
+}
+
+.logo {
+    width: 132px;
+    height: 140px;
+    
+}
+
+.formulario{
+    background-color:#E1DDBF ;
+}
+
+.graficos {
+    background-color: #67948F;
+}
+
+.grafico{
+    background-color: aliceblue;
+    width: 600px;
+   
+}
+
+.indicadorest {
+    background-color:#04253A;
+    color: white;
+    text-align: center;
+}
+.indicadores {
+    background-color: aliceblue;
+
+}
