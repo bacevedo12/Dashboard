@@ -49,10 +49,14 @@ export function dolarPublicado () {
       let fechaDia = datos.map(element => element.fecha.split('T'));
       console.log(valorDia[0]) 
       console.log(fechaDia[0])
-      let dolar =document.getElementById("dolarDia");
-      dolar.innerHTML += `Valor Dolar= ${valorDia[0]}`;
     })
+  insertar(valorDia)  
 };
     const url = 'https://mindicador.cl/api/dolar';
     peticion(url);
+}
+
+function insertar (valorDia){
+  let dolar =document.getElementById("dolarDia");
+  dolar.innerHTML = `Valor Dolar= ${valorDia[0]}`;
 }
