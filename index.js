@@ -9,6 +9,9 @@ chartEuro();
 
 import {chartLibraCobre} from './libraCobre.js';
 chartLibraCobre();
+
+import { dolarPublicado } from './dolar.js';
+dolarPublicado();
 // (()=>{
 //     const tabla = document.getElementById('valorDolar');
 //     const peticion = async (url) => {

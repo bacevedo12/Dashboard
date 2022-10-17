@@ -15,13 +15,13 @@ h2{
 }
 
 .logo {
-    width: 132px;
-    height: 140px;
+    width:max-content ;
+    height: 150px;
     
 }
 
 .formulario{
-    background-color:#E1DDBF ;
+    background-color:#E1DDBF;
 }
 
 .graficos {
@@ -43,3 +43,34 @@ h2{
     background-color: aliceblue;
 
 }
+
+.footer {
+
+    background-color:#04253A;
+
+}
+
+@media screen and (max-width:1500px){
+    
+    .logo {
+        width: 20%;
+        
+    }
+    .indicadores{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .graficos {
+        display: flex;
+        flex-direction: column;
+        margin: none;
+     }
+
+    }
+
+@media screen and (max-width:800px){
+     .grafico {
+        width: 500px;
+     }
+    }

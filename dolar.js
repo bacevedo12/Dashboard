@@ -35,28 +35,24 @@ function charts (fechas, valores){
               borderWidth: 1
           }]
       },
-      options: {
-        title:{
-          display: true,
-          text:'Indicadores de la UF',
-          fontSize: 30,
-          padding: 30,
-          fontColor:'black',
-        },
-        legend:{
-          position: 'bottom',
-          
-        },
-        elements: {
-          line:{
-            borderWidth: 8,
-            fill: false,
-          },
-        },
-    
-
       
-      }
   });
 }
 
+export function dolarPublicado () {
+  const peticion = async (url) => {
+ 
+    const data = await axios.get(url)
+    .then((respuesta) => {
+      const datos = respuesta.data.serie;
+      let valorDia = datos.map(element => element.valor); 
+      let fechaDia = datos.map(element => element.fecha.split('T'));
+      console.log(valorDia[0]) 
+      console.log(fechaDia[0])
+      let dolar =document.getElementById("dolarDia");
+      dolar.innerHTML += `Valor Dolar= ${valorDia[0]}`;
+    })
+};
+    const url = 'https://mindicador.cl/api/dolar';
+    peticion(url);
+}

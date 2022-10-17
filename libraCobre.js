@@ -35,28 +35,6 @@ export function chartLibraCobre () {
             borderWidth: 1
         }]
     },
-    // options: {
-    //   title:{
-    //     display: true,
-    //     text:'Indicadores de la UF',
-    //     fontSize: 30,
-    //     padding: 30,
-    //     fontColor:'black',
-    //   },
-    //   legend:{
-    //     position: 'bottom',
-        
-    //   },
-    //   elements: {
-    //     line:{
-    //       borderWidth: 8,
-    //       fill: false,
-    //     },
-    //   },
-  
-
-    
-    // }
 });
 }
 

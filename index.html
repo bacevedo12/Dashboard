@@ -10,15 +10,20 @@
   <title>Indicadores Económicos</title>
 </head>
 <body>
-  <div class=" px-0 container-fluid d-flex header">
-    <img class="logo" src="/images/Captura de pantalla 2022-10-13 101329.png" alt="">
-    <h1 class="m-auto"> Indicadores Económicos</h1>
+<header>
+  <div class="row px-0 container-fluid d-flex header">
+      <div class="col-2">
+        <img class="logo" src="/images/Captura de pantalla 2022-10-13 101329.png" alt="">
+      </div>
+    <div class="col-10">
+        <h1 class="m-auto"> Indicadores Económicos</h1>
+    </div>
   </div>
 </header>
 <main>
   <div class="container-fluid">
     <div class="row align-items-center formulario">
-      <div class="col-2  ">
+      <div class="col-2">
         <select class="form-select" aria-label="Default select example">
           <option selected>Indique año de evaluación</option>
           <option value="1">2021</option>
@@ -30,23 +35,23 @@
       </div>
       <div class="col-10 align-items-center graficos">
         
-        <div class="row indicadorest m-5 justify-content-center">
+        <div class="row indicadores m-5 justify-content-center">
           <h2>Indicadores del día</h2>
-          <div class="col-3 indicadores m-3">
+          <div class="col-3 indicadores m-3" id="dolardia">
             <h3>dólar</h3>
           </div>
-          <div class="col-3 indicadores m-3">
+          <div class="col-3 indicadores m-3" id="euroDia">
             <h3>Euro</h3>
           </div>
-          <div class="col-3 indicadores m-3">
+          <div class="col-3 indicadores m-3" id="ufDia">
             <h3>UF</h3>
           </div>
         </div>
 
-        <div class="row">
+        <div class="row graficos">
           <div class="col-6">
             <div class="grafico m-4">
-              <canvas id="myChart"></canvas>
+              <canvas id="myChart" class="myChart"></canvas>
             </div>
           </div>
           <div class="col-6">
@@ -56,7 +61,7 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="row graficos">
           <div class="col-6">
             <div class="grafico m-4">
               <canvas id="myChart3"></canvas>
@@ -69,15 +74,15 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="row graficos">
           <div class="col-6">
             <div class="grafico m-4">
-              <canvas id="myChart"></canvas>
+              <canvas id="myChart5"></canvas>
             </div>
           </div>
           <div class="col-6">
             <div class="grafico m-4">
-              <canvas id="myChart2"></canvas>
+              <canvas id="myChart6"></canvas>
             </div>
           </div>
         </div>
@@ -88,6 +93,17 @@
   </div>
       
 </main>
+<footer class="footer">
+
+  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
+
+  </ul>
+
+  <p class="text-center text-muted">© 2022 by Barbara y Camila</p>
+
+</footer>
     
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
