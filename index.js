@@ -12,6 +12,12 @@ chartLibraCobre();
 
 import { dolarPublicado } from './dolar.js';
 dolarPublicado();
+
+import { chartIpc } from './ipc.js';
+chartIpc();
+
+import { chartImacec } from './imacec.js';
+chartImacec();
 // (()=>{
 //     const tabla = document.getElementById('valorDolar');
 //     const peticion = async (url) => {
