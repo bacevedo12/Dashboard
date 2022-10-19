@@ -1,34 +1,30 @@
-import {chartDolar} from './dolar.js';
+import {chartDolar, dolarPublicado} from './assets/js/dolar.js';
 chartDolar();
 
-import {chartUf} from './uf.js';
+import {chartUf} from './assets/js/uf.js';
 chartUf();
 
-import {chartEuro} from './euro.js';
+import {chartEuro} from './assets/js/euro.js';
 chartEuro();
 
-import {chartLibraCobre} from './libraCobre.js';
+import {chartLibraCobre} from './assets/js/libraCobre.js';
 chartLibraCobre();
 
-import { dolarPublicado } from './dolar.js';
+import {chartIpc} from './assets/js/ipc.js';
+chartIpc();
+
+import { chartImacec } from './assets/js/imacec.js';
+chartImacec();
+
+
 dolarPublicado();
-// (()=>{
-//     const tabla = document.getElementById('valorDolar');
-//     const peticion = async (url) => {
-     
-//       const data = await axios.get(url)
-//       .then((respuesta) => {
-//         const lista = respuesta.data.serie;
-//         lista.filter(element => {
-//           tabla.innerHTML += 
-//           `
-//            <p>${element.fecha [0]}</p>
-//             <p>${element.valor[0]}</p>
-//           </p>`
-//         });
-//       });
-//     }
-//     const url = 'https://mindicador.cl/api/dolar';
-//     peticion(url);
-  
-//   })();
+
+document.getElementById('selectAnio').addEventListener('change',(e) => {
+    chartDolar(e.target.value)
+    chartUf(e.target.value)
+    chartEuro(e.target.value)
+    chartLibraCobre(e.target.value)
+    chartIpc(e.target.value)
+    chartImacec(e.target.value)
+});
+

@@ -1,4 +1,4 @@
-function chartIpc() {
+export function chartIpc() {
     const peticion5 = async (url) => {
      
       const data5 = await axios.get(url)
@@ -23,7 +23,7 @@ function chartIpc() {
   
   
   function charts5 (fechas, valores){
-  const ctx = document.getElementById('myChartipc').getContext('2d');
+  const ctx = document.getElementById('myChart5').getContext('2d');
   const myChart5 = new Chart(ctx, {
       type: 'bar',
       data: {
@@ -39,7 +39,7 @@ function chartIpc() {
   }
 
 
-  chartIpc()
+  // chartIpc()
 
 
 

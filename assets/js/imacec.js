@@ -1,4 +1,4 @@
-function chartImacec() {
+export function chartImacec() {
     const peticion6 = async (url) => {
      
       const data6 = await axios.get(url)
@@ -23,7 +23,7 @@ function chartImacec() {
   
   
   function charts6 (fechas, valores){
-  const ctx = document.getElementById('myChartimacec').getContext('2d');
+  const ctx = document.getElementById('myChart6').getContext('2d');
   const myChart6 = new Chart(ctx, {
       type: 'bar',
       data: {
@@ -38,4 +38,4 @@ function chartImacec() {
   });
   }
 
-  chartImacec()
+  // chartImacec()
