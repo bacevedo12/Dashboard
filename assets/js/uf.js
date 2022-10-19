@@ -36,30 +36,15 @@ export function chartUf(anio) {
           datasets: [{
               label: 'UF',
               data: valores.reverse(),
-              borderColor:'red',
-              borderWidth: 1
+              borderColor:'rgb(154, 205, 50)',
+              borderWidth: 2
           }]
       },
-      options: {
-        title:{
-          display: true,
-          text:'Indicadores de la UF',
-          fontSize: 30,
-          padding: 30,
-          fontColor:'black',
-        },
-        legend:{
-          position: 'bottom',
-          
-        },
-        elements: {
-          line:{
-            borderWidth: 8,
-            fill: false,
-          },
-        },
-      
-      }
+      options:{
+        layout:{
+          padding:25,
+        }
+      } 
   });
   return myChart2
   }

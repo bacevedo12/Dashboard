@@ -34,23 +34,20 @@ export function chartImacec(anio) {
           datasets: [{
               label: 'IMACEC',
               data: valores.reverse(),
-              borderColor:'blue',
-              backgroundColor: 'rgb(4,37,58, 0.5)',
+              borderColor:'rgb(255,69, 0)',
               borderWidth: 1
           }]
       },
-      options: {
-        responsive: true,
-        plugins: {
-          legend: {
-            position: 'top',
-          },
-          title: {
-            display: true,
-            text: 'Gráfico IMACEC'
-          }
+      options:{
+        layout:{
+          padding:25,
+        },
+        legend:{
+          labels:{
+            fontColor:'red'
         }
-      },
+        }
+      } 
   });
   return myChart6;
   }
