@@ -1,30 +1,34 @@
-export function chartDolar () {
+let myChart
+
+export function chartDolar (anio) {
     const peticion = async (url) => {
      
       const data = await axios.get(url)
       .then((respuesta) => {
         const datos = respuesta.data.serie;
-        console.log(datos)
         let valores = datos.map(element => element.valor);
         let fechas = datos.map(element =>{
           let resultadoFecha = element.fecha.split('T');
           resultadoFecha = resultadoFecha[0].split('-').reverse().join('-');
            return resultadoFecha;
         });
-        console.log(valores)
-        console.log(fechas)
-      charts(fechas, valores); 
+        charts(fechas, valores); 
       });
     }
-    const url = 'https://mindicador.cl/api/dolar';
+    let url ='https://mindicador.cl/api/dolar';
+    if (anio){
+       myChart.destroy();
+       url = 'https://mindicador.cl/api/dolar/'+ anio;
+    }
+
     peticion(url);
- 
+    
   };
 
-
+  
 function charts (fechas, valores){
   const ctx = document.getElementById('myChart').getContext('2d');
-  const myChart = new Chart(ctx, {
+  myChart = new Chart(ctx, {
       type: 'line',
       data: {
           labels: fechas.reverse(),
@@ -33,10 +37,12 @@ function charts (fechas, valores){
               data: valores.reverse(),
               borderColor:'red',
               borderWidth: 1
+              
           }]
       },
       
   });
+  return myChart
 }
 
 export function dolarPublicado () {
@@ -49,8 +55,8 @@ export function dolarPublicado () {
       let fechaDia = datos.map(element => element.fecha.split('T'));
       console.log(valorDia[0]) 
       console.log(fechaDia[0])
+      insertar(valorDia) 
     })
-  insertar(valorDia)  
 };
     const url = 'https://mindicador.cl/api/dolar';
     peticion(url);

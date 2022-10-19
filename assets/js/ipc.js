@@ -51,7 +51,8 @@ export function chartIpc() {
   });
   }
 
-  chartIpc()
+
+  // chartIpc()
 
 
 

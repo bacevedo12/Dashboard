@@ -5,7 +5,7 @@ h1{
 }
 h2{
     font-size: 8rem;
-    color: white;
+    color:black;
     font-style: georgia; 
 }
 
@@ -15,8 +15,8 @@ h2{
 }
 
 .logo {
-    width:max-content ;
-    height: 150px;
+    max-width: 500px;
+    height: 200px;
     
 }
 
