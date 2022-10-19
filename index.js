@@ -1,23 +1,19 @@
 import {chartDolar, dolarPublicado} from './assets/js/dolar.js';
-chartDolar();
-
-import {chartUf} from './assets/js/uf.js';
-chartUf();
-
-import {chartEuro} from './assets/js/euro.js';
-chartEuro();
-
+import {chartUf, ufPublicada} from './assets/js/uf.js';
+import {chartEuro, euroPublicado} from './assets/js/euro.js';
 import {chartLibraCobre} from './assets/js/libraCobre.js';
-chartLibraCobre();
-
 import {chartIpc} from './assets/js/ipc.js';
-chartIpc();
-
 import { chartImacec } from './assets/js/imacec.js';
+
+chartDolar();
+chartUf();
+chartEuro();
+chartLibraCobre();
+chartIpc();
 chartImacec();
-
-
 dolarPublicado();
+euroPublicado();
+ufPublicada();
 
 document.getElementById('selectAnio').addEventListener('change',(e) => {
     chartDolar(e.target.value)
