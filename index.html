@@ -25,7 +25,7 @@
   <div class="container-fluid">
     <div class="row formulario">
       <div class="col-12 col-md-2 pt-5">
-        <select id="selectAnio" class="form-select" aria-label="Default select example">
+        <select id="selectAnio" class="form-select m-3" aria-label="Default select example">
           <option selected disabled>Indique año de evaluación</option>
           <option value="2021">2021</option>
           <option value="2020">2020</option>
@@ -36,15 +36,16 @@
       </div>
       <div class="col-12 col-md-10 align-items-center graficos">
         
-        <div class="row indicadores m-5 justify-content-center">
-          <h2>Indicadores del día</h2>
-          <div class="col-3 indicadores m-3" id="dolarDia">
+        <div class="row indicadores m-5 justify-content-center d-flex flex-wrap">
+          <h2 >Indicadores del día</h2>
+          <h2 id="dia"></h2>
+          <div class="col-12 col-xl-3 indicadores m-3" id="dolarDia">
             <h3>dólar</h3>
           </div>
-          <div class="col-3 indicadores m-3" id="euroDia">
+          <div class="col-12 col-xl-3 indicadores m-3" id="euroDia">
             <h3>Euro</h3>
           </div>
-          <div class="col-3 indicadores m-3" id="ufDia">
+          <div class="col-12 col-xl-3 indicadores m-3" id="ufDia">
             <h3>UF</h3>
           </div>
         </div>
