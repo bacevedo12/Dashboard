@@ -31,9 +31,22 @@ export function chartIpc() {
           datasets: [{
               label: 'IPC',
               data: valores.reverse(),
-              borderColor:'red',
+              borderColor:'blue',
+              backgroundColor: 'rgb(4,37,58, 0.5)',
               borderWidth: 1
           }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'top',
+          },
+          title: {
+            display: true,
+            text: 'Gráfico IPC'
+          }
+        }
       },
   });
   }

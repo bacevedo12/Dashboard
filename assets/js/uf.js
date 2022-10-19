@@ -57,3 +57,27 @@ export function chartUf() {
       }
   });
   }
+
+  export function ufPublicada () {
+    const peticion = async (url) => {
+   
+      const data = await axios.get(url)
+      .then((respuesta) => {
+        const datos = respuesta.data.serie;
+        let valorDia = datos.map(element => element.valor); 
+        let fechaDia = datos.map(element => element.fecha.split('T'));
+        console.log(valorDia[0]) 
+        console.log(fechaDia[0])
+        insertar(valorDia, fechaDia) 
+      })
+  };
+      const url = 'https://mindicador.cl/api/uf';
+      peticion(url);
+  }
+  
+  function insertar (valorDia,fechaDia){
+    let uf =document.getElementById("ufDia");
+    let fecha= fechaDia[0][0].split('-').reverse().join('-');
+    uf.innerHTML = `<div class=" d-flex align-items-center justify-content-center indicador"> 
+    <h6>Valor UF=$${valorDia[0]}</h6></div>`;
+  }
