@@ -35,33 +35,23 @@ export function chartEuro(anio) {
             datasets: [{
                 label: 'Euro',
                 data: valores.reverse(),
-                borderColor:'red',
-                borderWidth: 1
-            }]
-        },
-        options: {
-          title:{
-            display: true,
-            text:'Indicadores de la UF',
-            fontSize: 30,
-            padding: 30,
-            fontColor:'black',
-          },
-          legend:{
-            position: 'bottom',
-            
-          },
-          elements: {
-            line:{
-              borderWidth: 8,
-              fill: false,
+                borderColor:'rgb(30, 144, 255)',
+                borderWidth: 2
+              }]
             },
-          },
-        
+            options:{
+              layout:{
+                padding:25,
+              },
+              legend:{
+                labels:{
+                  fontColor:'red'
+              }
+              }
+            } 
+        });
+        return myChart3;
         }
-    });
-    return myChart3
-    }
 
     export function euroPublicado () {
       const peticion = async (url) => {
