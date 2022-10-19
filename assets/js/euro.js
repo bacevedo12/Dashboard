@@ -31,29 +31,14 @@ export function chartEuro() {
           datasets: [{
               label: 'Euro',
               data: valores.reverse(),
-              borderColor:'red',
-              borderWidth: 1
+              borderColor:'rgb(250, 128, 114)',
+              borderWidth: 2
           }]
       },
-      options: {
-        title:{
-          display: true,
-          text:'Indicadores de la UF',
-          fontSize: 30,
-          padding: 30,
-          fontColor:'black',
-        },
-        legend:{
-          position: 'bottom',
-          
-        },
-        elements: {
-          line:{
-            borderWidth: 8,
-            fill: false,
-          },
-        },
-      
-      }
+      options:{
+        layout:{
+          padding:25,
+        }
+      } 
   });
   }

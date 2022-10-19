@@ -31,10 +31,16 @@ export function chartLibraCobre () {
         datasets: [{
             label: 'Libra De Cobre',
             data: valores.reverse(),
-            borderColor:'red',
-            borderWidth: 1
+            borderColor:'rgb(135, 206, 255)',
+            borderWidth: 2
+
         }]
     },
+    options:{
+      layout:{
+        padding:25,
+      }
+    }
 });
 }
 

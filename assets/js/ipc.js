@@ -31,10 +31,15 @@ export function chartIpc() {
           datasets: [{
               label: 'IPC',
               data: valores.reverse(),
-              borderColor:'red',
+              borderColor:'rgb(139, 0, 139)',
               borderWidth: 1
           }]
       },
+      options:{
+        layout:{
+          padding:25,
+        }
+      } 
   });
   }
 

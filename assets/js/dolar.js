@@ -35,12 +35,23 @@ function charts (fechas, valores){
           datasets: [{
               label: 'Dolar',
               data: valores.reverse(),
-              borderColor:'red',
-              borderWidth: 1
+              borderColor:'rgb(30, 144, 255)',
+              borderWidth: 2
               
           }]
       },
-      
+      options:{
+        scales:{
+          xAxes:[{
+            gridLines:{
+              display:false,
+            }
+          }]
+        },
+        layout:{
+          padding:25,
+        }
+      } 
   });
   return myChart
 }

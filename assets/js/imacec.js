@@ -31,10 +31,20 @@ export function chartImacec() {
           datasets: [{
               label: 'IMACEC',
               data: valores.reverse(),
-              borderColor:'red',
+              borderColor:'rgb(255,69, 0)',
               borderWidth: 1
           }]
       },
+      options:{
+        layout:{
+          padding:25,
+        },
+        legend:{
+          labels:{
+            fontColor:'red'
+        }
+        }
+      } 
   });
   }
 
