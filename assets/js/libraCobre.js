@@ -40,6 +40,19 @@ export function chartLibraCobre (anio) {
         }]
     },
     options:{
+      plugins: {
+        title: {
+          display: true,
+          text: 'LIBRA DE COBRE',
+          color: '#754',
+          font: {
+            size: 20
+           
+          }
+
+        }
+      },
+
       layout:{
         padding:25,
       }

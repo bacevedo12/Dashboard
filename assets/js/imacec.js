@@ -34,11 +34,30 @@ export function chartImacec(anio) {
           datasets: [{
               label: 'IMACEC',
               data: valores.reverse(),
-              borderColor:'rgb(255,69, 0)',
+              backgroundColor: [
+                'rgb(52, 152, 219)',
+                'rgb(205, 97, 85)',
+              ],
+              borderColor: [
+                'rgb(52, 152, 219)',
+                'rgb(205, 97, 85)'
+              ],
               borderWidth: 1
           }]
       },
       options:{
+        plugins: {
+          title: {
+            display: true,
+            text: 'IMACEC (%)',
+            color: '#754',
+            font: {
+              size: 20
+             
+            }
+
+          }
+        },
         layout:{
           padding:25,
         },

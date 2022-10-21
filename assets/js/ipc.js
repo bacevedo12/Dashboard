@@ -33,11 +33,30 @@ export function chartIpc(anio) {
           datasets: [{
               label: 'IPC',
               data: valores.reverse(),
-              borderColor:'rgb(139, 0, 139)',
+              backgroundColor: [
+                'rgb(230, 126, 34)',
+                'rgb(118, 215, 196)',
+              ],
+              borderColor:[
+                'rgb(165, 105, 189)',
+                'rgb(118, 215, 196)',
+              ],
               borderWidth: 1
           }]
       },
       options:{
+        plugins: {
+          title: {
+            display: true,
+            text: 'IPC (%)',
+            color: '#754',
+            font: {
+              size: 20
+             
+            }
+
+          }
+        },
         layout:{
           padding:25,
         }

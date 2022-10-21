@@ -41,17 +41,28 @@ function charts (fechas, valores){
           }]
       },
       options:{
-        scales:{
-          xAxes:[{
-            gridLines:{
-              display:false,
+        plugins: {
+          title: {
+            display: true,
+            text: 'DOLAR ($)',
+            color: '#754',
+            font: {
+              size: 20
+             
             }
-          }]
+
+          }
         },
+        scales: {
+          y: {
+            suggestedMin: 700,
+            suggestedMax: 1200
+          }
+        },      
         layout:{
           padding:25,
         }
-      } 
+      }  
   });
   return myChart
 }

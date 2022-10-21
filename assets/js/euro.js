@@ -35,11 +35,23 @@ export function chartEuro(anio) {
             datasets: [{
                 label: 'Euro',
                 data: valores.reverse(),
-                borderColor:'rgb(30, 144, 255)',
+                borderColor:'rgb(250, 128, 114)',
                 borderWidth: 2
               }]
             },
             options:{
+              plugins: {
+                title: {
+                  display: true,
+                  text: 'EURO ($)',
+                  color: '#754',
+                  font: {
+                    size: 20
+                   
+                  }
+      
+                }
+              },
               layout:{
                 padding:25,
               },

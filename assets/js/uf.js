@@ -41,6 +41,18 @@ export function chartUf(anio) {
           }]
       },
       options:{
+        plugins: {
+          title: {
+            display: true,
+            text: 'UF ($)',
+            color: '#754',
+            font: {
+              size: 20
+             
+            }
+
+          }
+        },
         layout:{
           padding:25,
         }
