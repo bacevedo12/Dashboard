@@ -43,7 +43,7 @@ export function chartLibraCobre (anio) {
       plugins: {
         title: {
           display: true,
-          text: 'LIBRA DE COBRE',
+          text: 'LIBRA DE COBRE (dólares)',
           color: '#754',
           font: {
             size: 20
