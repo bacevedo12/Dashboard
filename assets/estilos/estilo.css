@@ -59,8 +59,9 @@ h2{
 
 }
 .imagen{
-    height: 800px;
-    margin-top: 250px;
+    height: 600px;
+    margin-bottom: 25px;
+    margin-top: 25px
 }
 
 @media screen and (max-width:1500px){
