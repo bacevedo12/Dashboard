@@ -24,7 +24,7 @@
 <main>
   <div class="container-fluid">
     <div class="row formulario">     
-      <div class="col-12 col-md-2 pt-5">
+      <div class="col-12 col-md-2 pt-5 ">
         <select id="selectAnio" class="form-select" aria-label="Default select example">
           <option selected disabled>Indique año de evaluación</option>
           <option value="2021">2021</option>
@@ -33,31 +33,33 @@
           <option value="2018">2018</option>
           <option value="2017">2017</option>
         </select>
-        <img class="logo imag-fluid mt-5 w-100 h-25" src="./assets/images/imagenFinanzas.jpg">
+        <div class="d-flex align-items-center w-100"> 
+        <img class="imag-fluid w-100 imagen" src="./assets/images/imagenFinanzas2.jpg">
+       </div>
       </div>
       <div class="col-12 col-md-10 align-items-center graficos">
         
         <div class="row indicadores m-5 justify-content-center d-flex flex-wrap">
           <h2 >Indicadores del día</h2>
           <h2 id="dia"></h2>
-          <div class="col-12 col-xl-3 indicadores m-3" id="dolarDia">
+          <div class="col-12 col-xl-3 indicadores mb-1" id="dolarDia">
             <h3>dólar</h3>
           </div>
-          <div class="col-12 col-xl-3 indicadores m-3" id="euroDia">
+          <div class="col-12 col-xl-3 indicadores mb-1" id="euroDia">
             <h3>Euro</h3>
           </div>
-          <div class="col-12 col-xl-3 indicadores m-3" id="ufDia">
+          <div class="col-12 col-xl-3 indicadores mb-1" id="ufDia">
             <h3>UF</h3>
           </div>
         </div>
 
         <div class="row graficos">
-          <div class="col-6">
+          <div class="col-12 col-xxl-6">
             <div class="grafico m-4">
               <canvas id="myChart" class="myChart"></canvas>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-xxl-6">
             <div class="grafico m-4">
               <canvas id="myChart2"></canvas>
             </div>
@@ -65,12 +67,12 @@
         </div>
 
         <div class="row graficos">
-          <div class="col-6">
+          <div class="col-12 col-xxl-6">
             <div class="grafico m-4">
               <canvas id="myChart3"></canvas>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-xxl-6">
             <div class="grafico m-4">
               <canvas id="myChart4"></canvas>
             </div>
@@ -78,12 +80,12 @@
         </div>
 
         <div class="row graficos">
-          <div class="col-6">
+          <div class="col-12 col-xxl-6">
             <div class="grafico m-4">
               <canvas id="myChart5"></canvas>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-xxl-6">
             <div class="grafico m-4">
               <canvas id="myChart6"></canvas>
             </div>

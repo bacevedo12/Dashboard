@@ -58,6 +58,10 @@ h2{
     background-color:#04253A;
 
 }
+.imagen{
+    height: 800px;
+    margin-top: 250px;
+}
 
 @media screen and (max-width:1500px){
     
@@ -70,17 +74,31 @@ h2{
         /* flex-direction: column; */
         justify-content: center;
     }
-
+    .imagen{
+        height: 700px;
+    }
 
     .graficos {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
         margin: none;
+        /* width: 500px; */
      }
 
     }
+ @media screen and (max-width:1000px){
+
+    .imagen {
+        width: 100;
+    }
+
+    } 
 
 @media screen and (max-width:768px){
+    
+    .imagen{
+        display: none;
+    }
      .grafico {
         width: 500px;
      }
@@ -91,16 +109,20 @@ h2{
 
 @media screen and (max-width:600px){
     .grafico {
-        width: 400px;
+        width: 350px;
         }
-    
+        .imagen{
+            display: none;
+        }
        }
 
 @media screen and (max-width:400px){
     h1 {
         font-size:small !important;
     }
-
+    .imagen{
+        display: none;
+    }
     .grafico{
         width: 300px;
     }
